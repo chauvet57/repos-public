@@ -1,0 +1,213 @@
+.cardEdit{
+
+width: 285px;
+height: 520px;
+
+background-color: rgb(202, 202, 202);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardPropo{
+width: 180px;
+height: 360px;
+
+}
+
+.headerCard {
+ 
+height: 15%;   
+}
+
+.contentBack{
+   
+    height: 75%;
+    overflow-y: auto;  
+}
+.footerBack{
+margin-top: 10px;
+    height: 10%;
+}
+.playBack {
+    
+color: rgb(77, 194, 56);
+}
+
+.editBack{
+    cursor: pointer;
+    color:  rgb(194, 141, 56);    
+}
+
+.suppBack{
+cursor: pointer;
+    color: rgb(194, 56, 56);      
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(56, 56, 56);
+}
+
+
+
+#inputRechercher {
+    width: 400px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 28px;
+    color: #272B30;
+    background-color: rgb(172, 172, 172);
+    background-image: url("loupe.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+
+
+.btn-Valider {
+    color: #272B30;
+    background-color: #409240;
+    border-radius: 8px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-Edit {
+    color: #272B30;
+    background-color: #374b8d;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.btn-Supp {
+    color: #272B30;
+    background-color: #b93232;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-Modif {
+    color: #272B30;
+    background-color: #b8872b;
+    height: 50px;
+    border-radius: 8px;
+}
+
+
+
+input:invalid {
+    border-color: #b61515;
+    background-color: #fbb7b7;
+}
+
+input:valid {
+    border-color: #409240;
+    background-color:#c7fbb7;
+}
+
+input {
+    border-radius: 8px;
+    width: 408px;
+}
+
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(204, 202, 202);
+    margin: 0;
+    font-family: inherit;
+    color: #ccc;
+    font-size: 30px;
+    line-height: inherit;
+    text-align: center;
+}
+
+form {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+   
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+   margin-right: 1px;
+   
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(204, 202, 202);
+    background: #2f3036;
+    text-decoration: none;
+    border-radius: 8px;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #275ad3;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background:rgb(204, 202, 202);
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #275ad3;
+    color:rgb(204, 202, 202);
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
